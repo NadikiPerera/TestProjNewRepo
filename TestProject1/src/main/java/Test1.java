@@ -25,7 +25,9 @@ public class Test1 {
   public void testUntitled() throws Exception {
     driver.get("http://www.mortgagecalculator.org/");
     driver.findElement(By.name("param[homevalue]")).clear();
-    driver.findElement(By.name("param[homevalue]")).sendKeys("80000");
+    driver.findElement(By.name("param[homevalue]")).sendKeys("70000");
+    driver.findElement(By.id("loanamt")).clear();
+    driver.findElement(By.id("loanamt")).sendKeys("50000");
   }
 
   @After
